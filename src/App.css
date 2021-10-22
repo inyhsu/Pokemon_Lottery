@@ -1,0 +1,17 @@
+.circle {
+  background-color:#fff;
+  border:1px solid orange;    
+  height:500px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:500px;
+  position: relative;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

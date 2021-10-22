@@ -4,7 +4,7 @@ import Ball from './components/Ball'
 
 function App() {
   let balls = [];
-  for (var i = 0; i < 50 + Math.random() * 50; i++) {
+  for (var i = 0; i < 100 + Math.random() * 100; i++) {
     balls.push(<Ball number={i} key={i}/>);
   }
   return (

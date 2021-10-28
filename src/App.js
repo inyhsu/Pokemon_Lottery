@@ -11,8 +11,9 @@ function App() {
           
         </div>
       </div> */}
-
-      <MatterBall />
+      <div className="container">
+        <MatterBall />
+      </div>
     </>
   );
 }

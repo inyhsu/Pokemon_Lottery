@@ -140,29 +140,20 @@ const MatterBall = () => {
         // }, 3000);
 
         // unmount
-        // return () => {
-        //     // destroy Matter
-        //     Render.stop(render)
-        //     Composite.clear(engine.world)
-        //     Engine.clear(engine)
-        //     render.canvas.remove()
-        //     render.canvas = null
-        //     render.context = null
-        //     render.textures = {}
-        // }
+        return () => {
+            // destroy Matter
+            Render.stop(render)
+            Composite.clear(engine.world)
+            Engine.clear(engine)
+            render.canvas.remove()
+            render.canvas = null
+            render.context = null
+            render.textures = {}
+        }
     }, [])
 
     return (
-        <div
-            ref={boxRef}
-            style={{
-                width: 300,
-                height: 300,
-            }}
-        >
-            <canvas ref={canvasRef} />
-        </div>
-
+        <canvas ref={canvasRef} />
     )
 }
 
